@@ -56,7 +56,10 @@
     "parentalControls": false,
     "ageAssurance": false,
     "healthOrWellnessTopics": false,
-    "socialMedia": false
+    "socialMedia": false,
+    "socialMediaAgeRestricted": false,
+    "sharedLocation": false,
+    "datingAndRelationships": false
   },
   "appId": "6836879949"
 }

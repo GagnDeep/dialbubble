@@ -23,15 +23,15 @@ let space = CGColorSpace(name: CGColorSpace.sRGB)!
 struct Shot { let file: String; let eyebrow: String; let headline: String }
 
 let shots: [Shot] = [
-    Shot(file: "home-dark", eyebrow: "FREE · OPEN SOURCE", headline: "Your Twilio number, on your iPhone"),
-    Shot(file: "keypad-dark", eyebrow: "BUSINESS CALLS", headline: "Call from your second line"),
-    Shot(file: "messages-dark", eyebrow: "SMS & MMS", headline: "Every text, one inbox"),
-    Shot(file: "active-call-dark", eyebrow: "CALLER ID", headline: "They see your business number"),
-    Shot(file: "conversation-dark", eyebrow: "BUSINESS TEXTING", headline: "Reply in clean, threaded chats"),
-    Shot(file: "voice-message-dark", eyebrow: "VOICE MESSAGES", headline: "Type it. The call speaks it."),
-    Shot(file: "recents-dark", eyebrow: "CALL HISTORY", headline: "Every call, cost and recording"),
-    Shot(file: "settings-dark", eyebrow: "PRIVATE BY DESIGN", headline: "No server. No tracking. No fees."),
-    Shot(file: "onboarding-dark", eyebrow: "SET UP IN 2 MINUTES", headline: "Try the demo, no account needed"),
+    Shot(file: "home-dark", eyebrow: "FREE · OPEN SOURCE", headline: "Your Twilio number,\non your iPhone"),
+    Shot(file: "keypad-dark", eyebrow: "BUSINESS CALLS", headline: "Call from your\nsecond line"),
+    Shot(file: "messages-dark", eyebrow: "SMS & MMS", headline: "Every text,\none inbox"),
+    Shot(file: "active-call-dark", eyebrow: "CALLER ID", headline: "They see your\nbusiness number"),
+    Shot(file: "conversation-dark", eyebrow: "BUSINESS TEXTING", headline: "Reply in clean,\nthreaded chats"),
+    Shot(file: "voice-message-dark", eyebrow: "VOICE MESSAGES", headline: "Type it. The call\nspeaks it."),
+    Shot(file: "recents-dark", eyebrow: "CALL HISTORY", headline: "Every call, cost\nand recording"),
+    Shot(file: "settings-dark", eyebrow: "PRIVATE BY DESIGN", headline: "No server.\nNo tracking."),
+    Shot(file: "onboarding-dark", eyebrow: "SET UP IN 2 MINUTES", headline: "Try the demo,\nno account needed"),
 ]
 
 func image(_ name: String) -> CGImage {
@@ -180,10 +180,10 @@ for (i, s) in shots.enumerated() {
 // MARK: iPhone Duo (two screens each)
 
 let duo: [(String, String, String, String)] = [
-    ("home-dark", "keypad-dark", "FREE · OPEN SOURCE", "Your Twilio number, on your iPhone"),
+    ("home-dark", "keypad-dark", "FREE · OPEN SOURCE", "Your Twilio number,\non your iPhone"),
     ("messages-dark", "conversation-dark", "SMS & MMS", "Every text, one inbox"),
     ("active-call-dark", "voice-message-dark", "BUSINESS CALLS", "Call from your second line"),
-    ("recents-dark", "settings-dark", "PRIVATE BY DESIGN", "No server. No tracking. No fees."),
+    ("recents-dark", "settings-dark", "PRIVATE BY DESIGN", "No server. No tracking.\nNo subscription."),
 ]
 for (i, d) in duo.enumerated() {
     let c = Canvas(2007, 2853)
