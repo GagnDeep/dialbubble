@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://gagndeep.github.io/dialbubble
+Sitemap: https://gagndeep.github.io/dialbubble/sitemap.xml

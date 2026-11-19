@@ -1,0 +1,134 @@
+# Dialbubble
+
+> Dialbubble is a free iPhone app for calling and texting from your own Twilio account and numbers. No server, no Dialbubble account, no subscription and no markup. You pay Twilio its normal usage rates.
+
+Key facts:
+
+- Free iPhone app. Requires iOS 26 or later. iPhone only, with no Android version.
+- Bundle ID com.dialbubble.app.
+- Connects directly to the user's own Twilio account. No server, no Dialbubble account, no subscription, no markup. Credentials stay in the iPhone Keychain.
+- Users pay Twilio's normal usage rates.
+- Talk calls ring the user's regular phone through a bridge. The user presses any key, then the other person is dialed and sees the Twilio number. There is no in-app VoIP, and a Talk call bills two Twilio legs.
+- No instant push notifications. The app checks every 20 seconds while open; optional alerts while closed use Background App Refresh, which iOS schedules.
+- Open source under the MIT License: https://github.com/GagnDeep/dialbubble
+- Requires a Twilio account for real use. Demo Mode works without one.
+- Twilio is a trademark of Twilio Inc. Dialbubble is an independent app, not affiliated with or endorsed by Twilio.
+
+## Product
+
+- [Home](https://gagndeep.github.io/dialbubble/): A free iPhone app for calling and texting from your own Twilio account. No server, no Dialbubble account, no subscription. You pay Twilio's normal rates.
+- [Features](https://gagndeep.github.io/dialbubble/features): Two-way calls, voice messages, SMS and MMS, broadcast, scheduled texts, recordings, lookup, usage and Face ID lock. Everything Dialbubble does with your Twilio account.
+- [How it works](https://gagndeep.github.io/dialbubble/how-it-works): How Dialbubble connects to your Twilio account, how two-way calls ring your phone first, and how to get set up in a few guided steps.
+- [Pricing](https://gagndeep.github.io/dialbubble/pricing): Dialbubble is free, with no subscription and no markup. You pay Twilio directly for the calls, texts and numbers you use.
+- [Security](https://gagndeep.github.io/dialbubble/security): Dialbubble has no server. Your Twilio credentials stay in the iPhone Keychain, and requests go straight to Twilio over TLS. Here is what that means and what it does not.
+- [About](https://gagndeep.github.io/dialbubble/about): Dialbubble is an independent iPhone app for people who already use Twilio, or want to, and would like to call and text without a monthly middleman.
+- [Support](https://gagndeep.github.io/dialbubble/support): Answers to common Dialbubble questions, two-way call troubleshooting, how to delete your data, and how to reach us on GitHub.
+
+## Use cases
+
+- [Twilio mobile app](https://gagndeep.github.io/dialbubble/twilio-mobile-app): Twilio has no general mobile app for calls or the Console. Here's what exists in 2026, from Flex Mobile to SDKs and third-party apps, and who each suits.
+- [Twilio iPhone app](https://gagndeep.github.io/dialbubble/twilio-iphone-app): Twilio doesn't publish a general iPhone app. Dialbubble is a free third-party iOS app for your own account. See its real screens, setup and limits.
+- [Twilio softphone app](https://gagndeep.github.io/dialbubble/twilio-softphone-app): Dialbubble is not a true Twilio softphone. See how a bridge differs from VoIP, what each costs per minute, and how to get a real softphone app.
+- [Twilio dialer app](https://gagndeep.github.io/dialbubble/twilio-dialer-app): Dial from your Twilio number on iPhone: talk live, send a spoken message, play audio or run TwiML. See which mode rings you and what it bills.
+- [Twilio SMS app](https://gagndeep.github.io/dialbubble/twilio-sms-app): Read and answer Twilio texts on iPhone, with threads per number, templates, broadcast and scheduling. Includes costs and the catch: no instant push alerts.
+- [Twilio Console on mobile](https://gagndeep.github.io/dialbubble/twilio-console-mobile): There's no Twilio Console app. See what works in Safari, what Dialbubble covers on the go (balance, usage, logs) and which jobs still need the full Console.
+- [Business phone apps for iPhone](https://gagndeep.github.io/dialbubble/business-phone-app-iphone): The best business phone app for iPhone depends on team size and call use. Compare Quo, Dialpad, Grasshopper, Google Voice and Dialbubble with dated prices.
+- [Second business number](https://gagndeep.github.io/dialbubble/second-business-number-iphone): Get a second phone number for business on iPhone with an eSIM, a phone app or your own Twilio number. See each one's cost and how incoming calls reach you.
+
+## Free tools
+
+- [All tools](https://gagndeep.github.io/dialbubble/tools): Free calculators and helpers for working with Twilio. They run in your browser, and no sign-up or Twilio account is needed.
+- [Twilio pricing calculator](https://gagndeep.github.io/dialbubble/tools/twilio-pricing-calculator): Estimate your monthly Twilio bill for calls, texts and numbers in 6 countries. Editable rates as of November 2026, with sources and a shareable link.
+- [SMS segment calculator](https://gagndeep.github.io/dialbubble/tools/sms-segment-calculator): Count SMS segments exactly, see how your message splits, and find the character forcing UCS-2. Free, instant and private: nothing leaves your browser.
+- [GSM-7 character checker](https://gagndeep.github.io/dialbubble/tools/gsm-7-character-checker): Check text for characters outside GSM-7, replace smart punctuation in one click, and browse the full GSM 03.38 table. Free, and it runs in your browser.
+- [E.164 phone number formatter](https://gagndeep.github.io/dialbubble/tools/e164-phone-number-formatter): Convert a list of phone numbers to E.164 with length checks for about 240 countries. Handles leading 0, 00 and 011. Copy or get a CSV, with no upload.
+- [TwiML builder](https://gagndeep.github.io/dialbubble/tools/twiml-builder): Build TwiML visually with Say, Gather, Dial and more, check pasted TwiML with line-by-line errors, and start from a press a key to connect template. Free.
+- [A2P 10DLC cost calculator](https://gagndeep.github.io/dialbubble/tools/a2p-10dlc-cost-calculator): Estimate A2P 10DLC brand, vetting, campaign and carrier fees on Twilio as of November 2026. Compare Sole Proprietor, Low-Volume Standard and Standard.
+- [Twilio credentials format checker](https://gagndeep.github.io/dialbubble/tools/twilio-credentials-format-checker): Check the format of a Twilio Account SID, API key or Auth Token in your browser, with an Account SID example and fixes for account SID is required.
+
+## Guides
+
+- [All guides](https://gagndeep.github.io/dialbubble/guides): Step-by-step guides to Twilio accounts, numbers, calling, texting and costs, written in plain English.
+- [Find your Account SID and Auth Token](https://gagndeep.github.io/dialbubble/guides/how-to-find-twilio-account-sid-and-auth-token): Where your Twilio Account SID and Auth Token live in the Console, what each one looks like, how to rotate a token, and how to keep both safe.
+- [Auth Token vs API Key](https://gagndeep.github.io/dialbubble/guides/twilio-auth-token-vs-api-key): Auth Tokens and API Keys both sign in to Twilio, but they carry different risks. Compare them side by side and learn when to pick each of them.
+- [Twilio free trial limits](https://gagndeep.github.io/dialbubble/guides/is-twilio-free-trial-limits): Twilio's trial is free for 30 days, with 100 SMS and 75 voice minutes. See what's blocked, why custom texts fail, and what upgrading will cost.
+- [How Twilio pricing works](https://gagndeep.github.io/dialbubble/guides/how-does-twilio-pricing-work): Twilio bills per minute, per text segment and per number, with no plan. See how carrier fees and call legs add up, with a worked monthly bill.
+- [Twilio phone number cost](https://gagndeep.github.io/dialbubble/guides/how-much-does-a-twilio-phone-number-cost): US Twilio numbers cost $1.15 a month for local and $2.15 for toll-free, as of November 2026. See the other charges to budget for before you buy.
+- [Use a Twilio phone number](https://gagndeep.github.io/dialbubble/guides/how-to-use-a-twilio-phone-number): A Twilio number doesn't ring like a SIM. Learn how to make calls, send texts and handle incoming traffic from it, with or without writing code.
+- [Call from a different number](https://gagndeep.github.io/dialbubble/guides/how-to-make-calls-from-a-different-number): You can legally call from a second number you own or have verified. Here are the real options, what they cost, and why spoofing isn't one of them.
+- [What is outbound caller ID](https://gagndeep.github.io/dialbubble/guides/what-is-outbound-caller-id): Outbound caller ID is the number people see when you call them. Learn how it's set, what Twilio allows, and why your calls can show as spam.
+- [Add a verified caller ID](https://gagndeep.github.io/dialbubble/guides/how-to-add-a-verified-caller-id-in-twilio): Verify a phone you own so Twilio can show it as your caller ID. Follow the steps, fix verification calls that fail, and learn what it can't do.
+- [How Twilio SMS works](https://gagndeep.github.io/dialbubble/guides/how-does-twilio-sms-work): Follow one text from API request to handset: queue, carrier, delivery status and replies. Includes a working example and what each status means.
+- [A2P 10DLC registration](https://gagndeep.github.io/dialbubble/guides/a2p-10dlc-registration-guide): Which A2P 10DLC brand fits you, what each fee costs as of November 2026, how to get a campaign approved, and how to avoid common rejections.
+- [E.164 phone number format](https://gagndeep.github.io/dialbubble/guides/e164-phone-number-format): E.164 is + then country code then number, with no spaces. See US and international examples, conversion rules and the mistakes that cause errors.
+- [GSM-7 vs UCS-2](https://gagndeep.github.io/dialbubble/guides/gsm-7-vs-ucs-2-sms-encoding): One emoji can cut a text's segment from 160 characters to 70 and raise its cost. See how GSM-7 and UCS-2 differ, with worked segment counts.
+- [TwiML examples](https://gagndeep.github.io/dialbubble/guides/twiml-examples): Working TwiML for voice messages, audio, forwarding, menus, voicemail and auto-replies, with what each verb does and the errors to watch out for.
+- [Twilio call forwarding](https://gagndeep.github.io/dialbubble/guides/twilio-call-forwarding): Forward a Twilio number to any phone in a few minutes with a TwiML Bin. Covers caller ID, cost per forwarded call, and the fixes when it fails.
+- [Twilio call recording](https://gagndeep.github.io/dialbubble/guides/twilio-call-recording-guide): Turn on Twilio call recording with the API or TwiML, work out the per-minute and storage cost, and learn when you need the other person's consent.
+- [Schedule SMS with Twilio](https://gagndeep.github.io/dialbubble/guides/how-to-schedule-sms-with-twilio): Twilio can hold a text and send it 15 minutes to 35 days later, using a Messaging Service. See the exact request, how to cancel, and common errors.
+- [Send SMS from iPhone with Twilio](https://gagndeep.github.io/dialbubble/guides/how-to-send-sms-from-iphone-with-twilio): Three ways to send a text from your Twilio number on an iPhone: an app, a Shortcut or the Console. Compare them and see what each one needs first.
+- [Second business number on iPhone](https://gagndeep.github.io/dialbubble/guides/second-phone-number-for-business-on-iphone): Compare the real ways to add a business number to your iPhone: eSIM, hosted phone apps, or your own Twilio account, with honest costs and limits.
+- [International calling on iPhone](https://gagndeep.github.io/dialbubble/guides/international-calling-on-iphone-with-your-own-number): How to call abroad from an iPhone using a number you own: compare carrier plans, apps and Twilio, turn on Geo Permissions, and estimate the cost.
+- [Twilio regulatory bundles](https://gagndeep.github.io/dialbubble/guides/twilio-regulatory-bundle-guide): Many countries need ID and address proof before Twilio will give you a number. Learn what a regulatory bundle holds and how to get it approved.
+- [Fix Twilio error 30007](https://gagndeep.github.io/dialbubble/guides/fix-twilio-error-30007): Error 30007 means Twilio or a carrier filtered your text. Work through the checks in order, rewrite a blocked message and get your delivery back.
+- [Fix Twilio error 21610](https://gagndeep.github.io/dialbubble/guides/fix-twilio-error-21610): Error 21610 means this person replied STOP to your number. Here's how to confirm it, how they can opt back in, and how to stop paying failed fees.
+
+## Comparisons
+
+- [All comparisons](https://gagndeep.github.io/dialbubble/compare): Fair, dated comparisons of Dialbubble, business phone apps and Twilio's API rivals, including when another option is the better choice for you and why.
+- [Dialbubble vs Quo](https://gagndeep.github.io/dialbubble/compare/dialbubble-vs-quo): Quo suits teams that want a shared inbox, Android and in-app calling. Dialbubble suits solo Twilio users paying by use. See dated prices and monthly costs.
+- [Dialbubble vs Google Voice](https://gagndeep.github.io/dialbubble/compare/dialbubble-vs-google-voice): Google Voice is the simple pick for many US users and Workspace teams. Dialbubble suits people already on Twilio. Compare 2026 plans, eligibility and costs.
+- [Dialbubble vs Dialpad](https://gagndeep.github.io/dialbubble/compare/dialbubble-vs-dialpad): Dialpad suits teams wanting AI call notes, meetings and admin tools. Dialbubble suits one Twilio user on iPhone. Compare 2026 prices, limits and costs.
+- [Dialbubble vs Grasshopper](https://gagndeep.github.io/dialbubble/compare/dialbubble-vs-grasshopper): Grasshopper has a flat price, incoming call routing and Android. Dialbubble is pay-per-use on your Twilio account. See 2026 prices and when each is cheaper.
+- [Dialbubble vs Twilio Console](https://gagndeep.github.io/dialbubble/compare/dialbubble-vs-twilio-console): The Twilio Console is the full, official control panel. Dialbubble is a phone-first app for everyday calls and texts. See why you'll need both.
+- [Twilio alternatives](https://gagndeep.github.io/dialbubble/compare/twilio-alternatives): A roundup of Telnyx, Vonage, Plivo, Sinch, Bandwidth and SignalWire with dated US prices, migration notes and who each suits, plus when to stay on Twilio.
+- [Telnyx vs Twilio](https://gagndeep.github.io/dialbubble/compare/telnyx-vs-twilio): Telnyx lists lower US rates, while Twilio offers more channels and a larger ecosystem. Compare 2026 voice, SMS and support prices, and what moving takes.
+
+## Twilio error codes
+
+- [All error codes](https://gagndeep.github.io/dialbubble/twilio-errors): Search 40 common Twilio error codes for calls, SMS and sign-in. Each page explains the cause in plain English, with step-by-step fixes and billing notes.
+- [Error 20003](https://gagndeep.github.io/dialbubble/twilio-errors/20003): Error 20003 means Twilio refused your credentials. Check the likely causes in order, from a mistyped Auth Token to a suspended account, and fix it fast.
+- [Error 20005](https://gagndeep.github.io/dialbubble/twilio-errors/20005): Error 20005 means your Twilio account isn't active, often because the balance hit $0. See how to reactivate it and how long that usually takes.
+- [Error 20404](https://gagndeep.github.io/dialbubble/twilio-errors/20404): Error 20404 means Twilio can't find what you asked for: a wrong SID, a deleted item, or a bad URL. See how to tell which it is, with correct path examples.
+- [Error 20429](https://gagndeep.github.io/dialbubble/twilio-errors/20429): Error 20429 means you hit Twilio's concurrency limit. These requests weren't processed, so they're safe to retry. See how to back off properly.
+- [Error 21210](https://gagndeep.github.io/dialbubble/twilio-errors/21210): Error 21210 means your call's From number isn't yours on Twilio. Buy a Twilio number or verify a phone you own, then call again. Here's how.
+- [Error 21211](https://gagndeep.github.io/dialbubble/twilio-errors/21211): Error 21211 means Twilio can't read the number you're contacting, usually because it isn't in E.164. See bad and corrected number examples here.
+- [Error 21212](https://gagndeep.github.io/dialbubble/twilio-errors/21212): Error 21212 means the sender on your call or text isn't valid: bad format, a do-not-originate list, or a generic sender ID. Check each in turn.
+- [Error 21215](https://gagndeep.github.io/dialbubble/twilio-errors/21215): Error 21215 means your Voice Geo Permissions don't allow calls to that country. Enable it in the Console, but read the toll fraud warning first.
+- [Error 21216](https://gagndeep.github.io/dialbubble/twilio-errors/21216): Error 21216 means Twilio blocked your call: high risk, regulation, or no Primary Customer Profile for +1 calls. Here's what to do about each.
+- [Error 21219](https://gagndeep.github.io/dialbubble/twilio-errors/21219): Error 21219 means a Twilio trial account called a number it hasn't verified. Verify it (up to five) or upgrade. Here's how to do either one.
+- [Error 21408](https://gagndeep.github.io/dialbubble/twilio-errors/21408): Error 21408 means Messaging Geo Permissions block that country. Enable it in the Console instantly, though some places can't be turned on at all.
+- [Error 21606](https://gagndeep.github.io/dialbubble/twilio-errors/21606): Error 21606 means your From number can't send texts on this account: wrong account, no SMS ability, or an unfinished port. Check each one here.
+- [Error 21608](https://gagndeep.github.io/dialbubble/twilio-errors/21608): Error 21608 means you texted an unverified number from a trial or an account with no compliance profile. See why upgrading alone may not help.
+- [Error 21610](https://gagndeep.github.io/dialbubble/twilio-errors/21610): Error 21610 means this person replied STOP, so Twilio won't message them from that sender. Only they can opt back in. Here's what to do next.
+- [Error 21612](https://gagndeep.github.io/dialbubble/twilio-errors/21612): Error 21612 means this sender can't reach this recipient, due to country rules, sender limits or no carrier link. Find the pairing at fault.
+- [Error 21614](https://gagndeep.github.io/dialbubble/twilio-errors/21614): Error 21614 means the To number isn't a mobile that can text, and it's likely a landline. See how to confirm that and how to clean up your list.
+- [Error 21617](https://gagndeep.github.io/dialbubble/twilio-errors/21617): Error 21617 means your text is over the 1,600 character limit. See why emoji and template values push you over, and how to measure the text.
+- [Error 21620](https://gagndeep.github.io/dialbubble/twilio-errors/21620): Error 21620 means a picture link in your MMS is malformed, usually with no https:// at the start. See how to check a media link before sending.
+- [Error 21660](https://gagndeep.github.io/dialbubble/twilio-errors/21660): Error 21660 means your From number is on a different Twilio account from your credentials. It often follows a move. See how to match them up.
+- [Error 21703](https://gagndeep.github.io/dialbubble/twilio-errors/21703): Error 21703 means your Messaging Service has no sender that can reach this recipient. It may be region, MMS or pending registration. Fix each.
+- [Error 30001](https://gagndeep.github.io/dialbubble/twilio-errors/30001): Error 30001 means texts overflowed Twilio's queue and failed. Work out your real send rate with a worked example, then add senders or slow down.
+- [Error 30002](https://gagndeep.github.io/dialbubble/twilio-errors/30002): Error 30002 means your Twilio account was suspended before a queued text could send. It's billing or a policy review. See how to tell which.
+- [Error 30003](https://gagndeep.github.io/dialbubble/twilio-errors/30003): Error 30003 means the carrier couldn't reach the phone: off, no signal or roaming. Most cases clear on a retry. See when it points to filtering.
+- [Error 30004](https://gagndeep.github.io/dialbubble/twilio-errors/30004): Error 30004 means the destination number is blocked from your text, from opt-outs to India DND rules. Test in this order to find which it is.
+- [Error 30005](https://gagndeep.github.io/dialbubble/twilio-errors/30005): Error 30005 means the carrier doesn't recognize the number, which may no longer exist. Check for a typo or dead number before you remove it.
+- [Error 30006](https://gagndeep.github.io/dialbubble/twilio-errors/30006): Error 30006 means your text can't reach this number: it's a landline, or a short code can't reach its carrier. Learn when you should stop retrying.
+- [Error 30007](https://gagndeep.github.io/dialbubble/twilio-errors/30007): Error 30007 means Twilio or a carrier filtered your text as spam or against the rules. See what to check first and what to send Twilio Support.
+- [Error 30008](https://gagndeep.github.io/dialbubble/twilio-errors/30008): Error 30008 is a generic carrier failure with no details. Use this test plan to separate phone, sender, encoding and network, then escalate.
+- [Error 30022](https://gagndeep.github.io/dialbubble/twilio-errors/30022): Error 30022 means a carrier rejected your US text for beating your campaign's rate. Learn how the limit spans your numbers and how to pace it.
+- [Error 30024](https://gagndeep.github.io/dialbubble/twilio-errors/30024): Error 30024 means the carrier needs a registered sender and yours isn't set up yet. See what to check for 10DLC, toll-free and short code numbers.
+- [Error 30034](https://gagndeep.github.io/dialbubble/twilio-errors/30034): Error 30034 means your US text came from a local number with no approved A2P campaign. Register, or use a toll-free number. See how to choose.
+- [Error 30035](https://gagndeep.github.io/dialbubble/twilio-errors/30035): Error 30035 means your number is still registering for A2P 10DLC. Allow up to 24 hours, and don't remove and re-add it, as that restarts it.
+- [Error 11200](https://gagndeep.github.io/dialbubble/twilio-errors/11200): Error 11200 means Twilio couldn't get a good response from your webhook: a bad status, timeout or blocked request. Here's how to narrow it down.
+- [Error 12100](https://gagndeep.github.io/dialbubble/twilio-errors/12100): Error 12100 means Twilio couldn't read your TwiML as XML. A blank first line, an unescaped & or an unclosed tag is usually to blame. Fix it here.
+- [Error 12200](https://gagndeep.github.io/dialbubble/twilio-errors/12200): Warning 12200 means your XML is readable but isn't valid TwiML: a misspelled verb, wrong case or unknown attribute. Use the line number to fix it.
+- [Error 13224](https://gagndeep.github.io/dialbubble/twilio-errors/13224): Error 13224 means a TwiML Dial targeted a number Twilio can't route: bad format, no such number, or a premium line. Check them in this order.
+- [Error 13225](https://gagndeep.github.io/dialbubble/twilio-errors/13225): Error 13225 means Twilio blocked a TwiML Dial: fraud risk, a regulation, or no approved profile for +1 calls. Find out which, and what to do.
+- [Error 13227](https://gagndeep.github.io/dialbubble/twilio-errors/13227): Error 13227 means a TwiML Dial tried a country your Voice Geo Permissions block, often on a forward abroad. Enable it, but check the rate first.
+- [Error 31005](https://gagndeep.github.io/dialbubble/twilio-errors/31005): Error 31005 means a Voice SDK call lost its WebSocket to Twilio's signaling servers. Check DNS, firewall rules on port 443 and your edge setting.
+- [Error 32011](https://gagndeep.github.io/dialbubble/twilio-errors/32011): Warning 32011 means Twilio couldn't talk to your SIP endpoint: no reply, a bad one, or a firewall block. See how to read it and fix your trunk.
+
+## Legal
+
+- [Privacy policy](https://gagndeep.github.io/dialbubble/privacy): Dialbubble collects nothing on our servers and has no analytics. Read exactly how the app and this website handle your information.
+- [Terms of use](https://gagndeep.github.io/dialbubble/terms): The terms for using the Dialbubble app and website, including your responsibility for your Twilio account, charges and compliance.

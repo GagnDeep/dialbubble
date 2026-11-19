@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dialbubble guides</title>
+    <link>https://gagndeep.github.io/dialbubble/guides</link>
+    <description>Twilio guides in plain English, from Dialbubble.</description>
+    <language>en</language>
+    <atom:link href="https://gagndeep.github.io/dialbubble/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>How to get a Twilio Account SID and Auth Token</title>
+      <link>https://gagndeep.github.io/dialbubble/guides/how-to-find-twilio-account-sid-and-auth-token</link>
+      <guid isPermaLink="true">https://gagndeep.github.io/dialbubble/guides/how-to-find-twilio-account-sid-and-auth-token</guid>
+      <description>Where your Twilio Account SID and Auth Token live in the Console, what each one looks like, how to rotate a token, and how to keep both safe.</description>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Twilio Auth Token vs API Key: which to use</title>
+      <link>https://gagndeep.github.io/dialbubble/guides/twilio-auth-token-vs-api-key</link>
+      <guid isPermaLink="true">https://gagndeep.github.io/dialbubble/guides/twilio-auth-token-vs-api-key</guid>
+      <description>Auth Tokens and API Keys both sign in to Twilio, but they carry different risks. Compare them side by side and learn when to pick each of them.</description>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Can I use Twilio for free? Trial limits</title>
+      <link>https://gagndeep.github.io/dialbubble/guides/is-twilio-free-trial-limits</link>
+      <guid isPermaLink="true">https://gagndeep.github.io/dialbubble/guides/is-twilio-free-trial-limits</guid>
+      <description>Twilio&apos;s trial is free for 30 days, with 100 SMS and 75 voice minutes. See what&apos;s blocked, why custom texts fail, and what upgrading will cost.</description>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>How does Twilio pricing work? A plain guide</title>
+      <link>https://gagndeep.github.io/dialbubble/guides/how-does-twilio-pricing-work</link>
+      <guid isPermaLink="true">https://gagndeep.github.io/dialbubble/guides/how-does-twilio-pricing-work</guid>
+      <description>Twilio bills per minute, per text segment and per number, with no plan. See how carrier fees and call legs add up, with a worked monthly bill.</description>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>How much does a Twilio phone number cost?</title>
+      <link>https://gagndeep.github.io/dialbubble/guides/how-much-does-a-twilio-phone-number-cost</link>
+      <guid isPermaLink="true">https://gagndeep.github.io/dialbubble/guides/how-much-does-a-twilio-phone-number-cost</guid>
+      <description>US Twilio numbers cost $1.15 a month for local and $2.15 for toll-free, as of November 2026. See the other charges to budget for before you buy.</description>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>How to use a Twilio phone number</title>
+      <link>https://gagndeep.github.io/dialbubble/guides/how-to-use-a-twilio-phone-number</link>
+      <guid isPermaLink="true">https://gagndeep.github.io/dialbubble/guides/how-to-use-a-twilio-phone-number</guid>
+      <description>A Twilio number doesn&apos;t ring like a SIM. Learn how to make calls, send texts and handle incoming traffic from it, with or without writing code.</description>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>How to make calls from a different number</title>
+      <link>https://gagndeep.github.io/dialbubble/guides/how-to-make-calls-from-a-different-number</link>
+      <guid isPermaLink="true">https://gagndeep.github.io/dialbubble/guides/how-to-make-calls-from-a-different-number</guid>
+      <description>You can legally call from a second number you own or have verified. Here are the real options, what they cost, and why spoofing isn&apos;t one of them.</description>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>What is outbound caller ID? A plain answer</title>
+      <link>https://gagndeep.github.io/dialbubble/guides/what-is-outbound-caller-id</link>
+      <guid isPermaLink="true">https://gagndeep.github.io/dialbubble/guides/what-is-outbound-caller-id</guid>
+      <description>Outbound caller ID is the number people see when you call them. Learn how it&apos;s set, what Twilio allows, and why your calls can show as spam.</description>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>How to add a verified caller ID in Twilio</title>
+      <link>https://gagndeep.github.io/dialbubble/guides/how-to-add-a-verified-caller-id-in-twilio</link>
+      <guid isPermaLink="true">https://gagndeep.github.io/dialbubble/guides/how-to-add-a-verified-caller-id-in-twilio</guid>
+      <description>Verify a phone you own so Twilio can show it as your caller ID. Follow the steps, fix verification calls that fail, and learn what it can&apos;t do.</description>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>How does Twilio SMS work? Step by step</title>
+      <link>https://gagndeep.github.io/dialbubble/guides/how-does-twilio-sms-work</link>
+      <guid isPermaLink="true">https://gagndeep.github.io/dialbubble/guides/how-does-twilio-sms-work</guid>
+      <description>Follow one text from API request to handset: queue, carrier, delivery status and replies. Includes a working example and what each status means.</description>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>A2P 10DLC registration: cost and steps</title>
+      <link>https://gagndeep.github.io/dialbubble/guides/a2p-10dlc-registration-guide</link>
+      <guid isPermaLink="true">https://gagndeep.github.io/dialbubble/guides/a2p-10dlc-registration-guide</guid>
+      <description>Which A2P 10DLC brand fits you, what each fee costs as of November 2026, how to get a campaign approved, and how to avoid common rejections.</description>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>E.164 format for US and international numbers</title>
+      <link>https://gagndeep.github.io/dialbubble/guides/e164-phone-number-format</link>
+      <guid isPermaLink="true">https://gagndeep.github.io/dialbubble/guides/e164-phone-number-format</guid>
+      <description>E.164 is + then country code then number, with no spaces. See US and international examples, conversion rules and the mistakes that cause errors.</description>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>GSM-7 vs UCS-2: SMS encoding and segments</title>
+      <link>https://gagndeep.github.io/dialbubble/guides/gsm-7-vs-ucs-2-sms-encoding</link>
+      <guid isPermaLink="true">https://gagndeep.github.io/dialbubble/guides/gsm-7-vs-ucs-2-sms-encoding</guid>
+      <description>One emoji can cut a text&apos;s segment from 160 characters to 70 and raise its cost. See how GSM-7 and UCS-2 differ, with worked segment counts.</description>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>TwiML examples you can copy and use</title>
+      <link>https://gagndeep.github.io/dialbubble/guides/twiml-examples</link>
+      <guid isPermaLink="true">https://gagndeep.github.io/dialbubble/guides/twiml-examples</guid>
+      <description>Working TwiML for voice messages, audio, forwarding, menus, voicemail and auto-replies, with what each verb does and the errors to watch out for.</description>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Twilio call forwarding: how to set it up</title>
+      <link>https://gagndeep.github.io/dialbubble/guides/twilio-call-forwarding</link>
+      <guid isPermaLink="true">https://gagndeep.github.io/dialbubble/guides/twilio-call-forwarding</guid>
+      <description>Forward a Twilio number to any phone in a few minutes with a TwiML Bin. Covers caller ID, cost per forwarded call, and the fixes when it fails.</description>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Twilio call recording: setup, cost and consent</title>
+      <link>https://gagndeep.github.io/dialbubble/guides/twilio-call-recording-guide</link>
+      <guid isPermaLink="true">https://gagndeep.github.io/dialbubble/guides/twilio-call-recording-guide</guid>
+      <description>Turn on Twilio call recording with the API or TwiML, work out the per-minute and storage cost, and learn when you need the other person&apos;s consent.</description>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>How to schedule SMS with Twilio</title>
+      <link>https://gagndeep.github.io/dialbubble/guides/how-to-schedule-sms-with-twilio</link>
+      <guid isPermaLink="true">https://gagndeep.github.io/dialbubble/guides/how-to-schedule-sms-with-twilio</guid>
+      <description>Twilio can hold a text and send it 15 minutes to 35 days later, using a Messaging Service. See the exact request, how to cancel, and common errors.</description>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>How to send SMS from iPhone with Twilio</title>
+      <link>https://gagndeep.github.io/dialbubble/guides/how-to-send-sms-from-iphone-with-twilio</link>
+      <guid isPermaLink="true">https://gagndeep.github.io/dialbubble/guides/how-to-send-sms-from-iphone-with-twilio</guid>
+      <description>Three ways to send a text from your Twilio number on an iPhone: an app, a Shortcut or the Console. Compare them and see what each one needs first.</description>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Second phone number for business on iPhone</title>
+      <link>https://gagndeep.github.io/dialbubble/guides/second-phone-number-for-business-on-iphone</link>
+      <guid isPermaLink="true">https://gagndeep.github.io/dialbubble/guides/second-phone-number-for-business-on-iphone</guid>
+      <description>Compare the real ways to add a business number to your iPhone: eSIM, hosted phone apps, or your own Twilio account, with honest costs and limits.</description>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>International calls on iPhone from your number</title>
+      <link>https://gagndeep.github.io/dialbubble/guides/international-calling-on-iphone-with-your-own-number</link>
+      <guid isPermaLink="true">https://gagndeep.github.io/dialbubble/guides/international-calling-on-iphone-with-your-own-number</guid>
+      <description>How to call abroad from an iPhone using a number you own: compare carrier plans, apps and Twilio, turn on Geo Permissions, and estimate the cost.</description>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Twilio regulatory bundles: get one approved</title>
+      <link>https://gagndeep.github.io/dialbubble/guides/twilio-regulatory-bundle-guide</link>
+      <guid isPermaLink="true">https://gagndeep.github.io/dialbubble/guides/twilio-regulatory-bundle-guide</guid>
+      <description>Many countries need ID and address proof before Twilio will give you a number. Learn what a regulatory bundle holds and how to get it approved.</description>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Twilio error 30007: how to fix message filtered</title>
+      <link>https://gagndeep.github.io/dialbubble/guides/fix-twilio-error-30007</link>
+      <guid isPermaLink="true">https://gagndeep.github.io/dialbubble/guides/fix-twilio-error-30007</guid>
+      <description>Error 30007 means Twilio or a carrier filtered your text. Work through the checks in order, rewrite a blocked message and get your delivery back.</description>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Twilio error 21610: how to fix unsubscribed</title>
+      <link>https://gagndeep.github.io/dialbubble/guides/fix-twilio-error-21610</link>
+      <guid isPermaLink="true">https://gagndeep.github.io/dialbubble/guides/fix-twilio-error-21610</guid>
+      <description>Error 21610 means this person replied STOP to your number. Here&apos;s how to confirm it, how they can opt back in, and how to stop paying failed fees.</description>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

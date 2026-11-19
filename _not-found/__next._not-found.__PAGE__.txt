@@ -1,0 +1,26 @@
+2:"$Sreact.fragment"
+3:"/dialbubble/_next/static/chunks/3dqivvalfkdul.js"
+4:I[44782,["$3"],"default"]
+5:I[43224,["$3"],"default"]
+a:I[82960,["$3"],""]
+b:I[57179,["$3"],"OutletBoundary"]
+c:"$Sreact.suspense"
+f:"ViewportBoundary"
+10:I[57179,["$3"],"$f"]
+11:"MetadataBoundary"
+12:I[57179,["$3"],"$11"]
+13:I[74221,["$3"],"IconMark"]
+7:X
+7:C
+8:X
+9:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$2","c",{"children":[["$","section",null,{"className":"mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-[76rem] pt-12 sm:pt-20","children":["$","div",null,{"className":"bubble on-brand px-6 py-12 sm:px-12 sm:py-16","children":[["$","p",null,{"className":"font-display text-lg font-semibold","children":"Error 404"}],["$","h1",null,{"className":"display-1 mt-2 max-w-[16ch]","children":"This number isn't in service"}],["$","p",null,{"className":"lede mt-4","children":"The page you were looking for isn't here. It may have moved, or the link may be wrong."}],["$","div",null,{"className":"mt-8 flex flex-wrap gap-3","children":[["$","$La",null,{"href":"/","className":"btn btn-white","children":"Go to the home page"}],["$","$La",null,{"href":"/support","className":"btn btn-ghost-white","children":"Get support"}]]}]]}]}],null,["$","$Lb",null,{"children":["$","$c",null,{"name":"Next.MetadataOutlet","children":"$@d"}]}]]}],"p":"$@e","v":null,"s":"$8"}}]]
+1:[["children",{"s":"/_not-found","h":64,"d":{"r":["$","$2","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]]}],"p":"$@6","v":"$7","s":"$8"},"c":"$Q9"}]]
+0:{"t":{"t":{"s":"","h":16,"c":"$Q1"},"h":{"r":["$","$2","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L10",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#F3F5F5","media":"(prefers-color-scheme: light)"}],["$","meta","3",{"name":"theme-color","content":"#04100E","media":"(prefers-color-scheme: dark)"}]]}],["$","$L12",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$c",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Page not found | Dialbubble"}],["$","meta","1",{"name":"description","content":"Dialbubble is a free iPhone app for calling and texting from your own Twilio account and numbers. No server, no Dialbubble account, no subscription and no markup. You pay Twilio its normal usage rates."}],["$","meta","2",{"name":"application-name","content":"Dialbubble"}],["$","link","3",{"rel":"manifest","href":"/dialbubble/manifest.webmanifest"}],["$","meta","4",{"name":"robots","content":"noindex, follow"}],["$","link","5",{"rel":"alternate","type":"application/rss+xml","href":"https://gagndeep.github.io/dialbubble/feed.xml","title":"Dialbubble guides"}],["$","meta","6",{"name":"format-detection","content":"telephone=no, address=no, email=no"}],["$","meta","7",{"name":"mobile-web-app-capable","content":"yes"}],["$","meta","8",{"name":"apple-mobile-web-app-title","content":"Dialbubble"}],["$","meta","9",{"name":"apple-mobile-web-app-status-bar-style","content":"default"}],["$","link","10",{"rel":"icon","href":"/dialbubble/favicon.ico?favicon.0pxr6ij7kqp1q.ico","sizes":"64x64","type":"image/x-icon"}],["$","link","11",{"rel":"icon","href":"/dialbubble/icon.png?icon.2l07xsdxafl65.png","sizes":"512x512","type":"image/png"}],["$","link","12",{"rel":"apple-touch-icon","href":"/dialbubble/apple-icon.png?apple-icon.2qa5zkvuei2dd.png","sizes":"180x180","type":"image/png"}],["$","$L13","13",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@14","v":null,"s":"$8"}},"a":"$@15","u":"$@16","b":"Ugkt0oRlqoQeB1ggh7IZm"}
+d:null
+16:true
+8:300
+8:C
+15:0
+6:"$undefined"
+14:"$undefined"
+e:"$undefined"
