@@ -1,0 +1,61 @@
+import type { RegistryEntry } from "@/lib/registry-types";
+
+export const productPages: RegistryEntry[] = [
+  {
+    path: "/",
+    title: "Dialbubble: call and text from your own Twilio numbers on iPhone",
+    label: "Home",
+    description: "A free iPhone app for calling and texting from your own Twilio account. No server, no Dialbubble account, no subscription. You pay Twilio's normal rates.",
+    section: "product",
+    keywords: ["twilio iphone app", "twilio mobile app", "twilio ios app", "twilio app for iphone", "twilio phone app"],
+    related: ["/features", "/how-it-works", "/pricing"],
+  },
+  {
+    path: "/features",
+    title: "Features",
+    description: "Two-way calls, voice messages, SMS and MMS, broadcast, scheduled texts, recordings, lookup, usage and Face ID lock. Everything Dialbubble does with your Twilio account.",
+    section: "product",
+    keywords: ["twilio sms app", "twilio calling app", "twilio softphone mobile app", "twilio mms iphone"],
+    related: ["/how-it-works", "/pricing", "/security"],
+  },
+  {
+    path: "/how-it-works",
+    title: "How it works",
+    description: "How Dialbubble connects to your Twilio account, how two-way calls ring your phone first, and how to get set up in a few guided steps.",
+    section: "product",
+    keywords: ["how to use twilio on iphone", "twilio two way call", "twilio account sid and auth token"],
+    related: ["/features", "/security", "/support"],
+  },
+  {
+    path: "/pricing",
+    title: "Pricing",
+    description: "Dialbubble is free, with no subscription and no markup. You pay Twilio directly for the calls, texts and numbers you use.",
+    section: "product",
+    keywords: ["twilio app cost", "twilio call pricing", "twilio sms pricing"],
+    related: ["/how-it-works", "/features", "/support"],
+  },
+  {
+    path: "/security",
+    title: "Security",
+    description: "Dialbubble has no server. Your Twilio credentials stay in the iPhone Keychain, and requests go straight to Twilio over TLS. Here is what that means and what it does not.",
+    section: "product",
+    keywords: ["twilio credentials security", "twilio api key iphone", "twilio auth token safe"],
+    related: ["/privacy", "/how-it-works", "/support"],
+  },
+  {
+    path: "/about",
+    title: "About",
+    description: "Dialbubble is an independent iPhone app for people who already use Twilio, or want to, and would like to call and text without a monthly middleman.",
+    section: "product",
+    keywords: ["about dialbubble"],
+    related: ["/security", "/features", "/support"],
+  },
+  {
+    path: "/support",
+    title: "Support",
+    description: "Answers to common Dialbubble questions, two-way call troubleshooting, how to delete your data, and how to reach us on GitHub.",
+    section: "product",
+    keywords: ["dialbubble support", "dialbubble help", "twilio two way call not working"],
+    related: ["/how-it-works", "/privacy", "/security"],
+  },
+];

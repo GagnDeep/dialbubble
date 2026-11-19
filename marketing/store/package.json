@@ -1,0 +1,3 @@
+{ "name": "dialbubble-store-art", "private": true, "type": "module",
+  "scripts": { "render": "node render.mjs" },
+  "devDependencies": { "playwright": "latest", "@fontsource-variable/bricolage-grotesque": "latest" } }

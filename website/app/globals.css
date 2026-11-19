@@ -1,0 +1,469 @@
+@import "tailwindcss";
+
+/* Design tokens. Colors switch with prefers-color-scheme, so never write dark: variants by hand. */
+:root {
+  color-scheme: light dark;
+  --canvas: #f3f5f5;
+  --surface: #ffffff;
+  --sunken: #e7ecec;
+  --ink: #0b1315;
+  --ink-soft: #465459;
+  --line: #d3dbdb;
+  --mint-text: #0b7d71;
+  --mint-tint: #e8f7f4;
+  --warn: #9a5b00;
+  --warn-tint: #f8ecd8;
+  --error: #b3261e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --canvas: #050708;
+    --surface: #0e1416;
+    --sunken: #151d20;
+    --ink: #eef3f3;
+    --ink-soft: #a5b3b7;
+    --line: #243035;
+    --mint-text: #6eebd6;
+    --mint-tint: #0c2925;
+    --warn: #f2b35c;
+    --warn-tint: #2b2010;
+    --error: #ff8a80;
+  }
+}
+
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-sunken: var(--sunken);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-line: var(--line);
+  --color-mint-text: var(--mint-text);
+  --color-mint-tint: var(--mint-tint);
+  --color-warn: var(--warn);
+  --color-warn-tint: var(--warn-tint);
+  /* White on mint-fill is 3.4:1, which passes AA only for large text (19px bold and up).
+     Use mint-strong (5:1) behind anything smaller. */
+  --color-mint-fill: #0e9c8a;
+  --color-mint-fill-hover: #0b8a7a;
+  --color-mint-strong: #0b7d71;
+  --color-mint-strong-hover: #096a60;
+
+  --font-sans: var(--font-body), ui-rounded, system-ui, sans-serif;
+  --font-display: var(--font-parkinsans), ui-rounded, system-ui, sans-serif;
+  --font-mono: var(--font-code), ui-monospace, monospace;
+
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  --radius-xl: 30px;
+
+  --breakpoint-xs: 26rem;
+}
+
+@layer base {
+html {
+  background: var(--canvas);
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 3px solid var(--mint-text);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.on-brand :focus-visible {
+  outline-color: #ffffff;
+}
+
+a {
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+
+}
+
+@layer components {
+/* Type scale */
+.display-1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.5rem, 1.75rem + 3.9vw, 5rem);
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+.display-2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.875rem, 1.45rem + 2vw, 3.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+.display-3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+}
+.lede {
+  font-size: clamp(1.125rem, 1.05rem + 0.4vw, 1.3125rem);
+  line-height: 1.5;
+  max-width: 38em;
+  text-wrap: pretty;
+}
+
+/* The brand shape: the app icon's speech bubble, stretched into a page section.
+   The gradient runs left to right so the tail at bottom left matches its first stop. */
+.bubble {
+  /* Deep teal, like the app icon. The bottom edge is one flat color so the tail matches it. */
+  --bubble-from: #08201d;
+  position: relative;
+  color: #ffffff;
+  border-radius: clamp(28px, 5vw, 56px);
+  background:
+    radial-gradient(70% 90% at 12% 0%, rgb(62 219 196 / 0.26) 0%, transparent 60%),
+    radial-gradient(60% 70% at 100% 100%, rgb(29 185 163 / 0.14) 0%, transparent 60%),
+    linear-gradient(180deg, #173b35 0%, #0d2b27 55%, var(--bubble-from) 100%);
+  box-shadow: inset 0 1px 0 rgb(154 247 232 / 0.18);
+}
+.bubble::after {
+  content: "";
+  position: absolute;
+  left: clamp(32px, 9%, 112px);
+  top: calc(100% - 1px);
+  width: 44px;
+  aspect-ratio: 1 / 0.82;
+  background: var(--bubble-from);
+  clip-path: path("M0 0 H84 L26 62 Q14 69 5 66 Q0 63 0 54 Z");
+}
+@media (max-width: 767px) {
+  .bubble::after {
+    clip-path: path("M0 0 H44 L14 33 Q8 37 3 35 Q0 33 0 28 Z");
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .bubble::after {
+    width: 62px;
+    clip-path: path("M0 0 H62 L19 46 Q10 51 4 49 Q0 46 0 40 Z");
+  }
+}
+@media (min-width: 1200px) {
+  .bubble::after {
+    width: 84px;
+  }
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  min-height: 3.5rem;
+  padding: 0.5rem 1.125rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1.1875rem; /* 19px bold counts as large text for AA on mint-fill */
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 120ms ease, transform 120ms ease;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn-sm {
+  min-height: 2.75rem;
+  padding: 0.25rem 1.125rem;
+  font-size: 1rem;
+}
+.btn-mint {
+  background: var(--color-mint-fill);
+  color: #ffffff;
+}
+.btn-mint:hover {
+  background: var(--color-mint-fill-hover);
+}
+.btn-mint.btn-sm {
+  background: var(--color-mint-strong);
+}
+.btn-mint.btn-sm:hover {
+  background: var(--color-mint-strong-hover);
+}
+.btn-white {
+  background: #ffffff;
+  color: #07443f;
+}
+/* The icon's mint bubble as a button. Dark ink on mint is 9:1. */
+.btn-glow {
+  background: linear-gradient(180deg, #9af7e8 0%, #3fd6bf 100%);
+  color: #04201c;
+  box-shadow: 0 10px 30px -10px rgb(62 219 196 / 0.7), inset 0 1px 0 rgb(255 255 255 / 0.6);
+}
+.btn-glow:hover {
+  background: linear-gradient(180deg, #b4fbef 0%, #52e0ca 100%);
+}
+.btn-github {
+  background: rgb(255 255 255 / 0.08);
+  color: #ffffff;
+  box-shadow: inset 0 0 0 1.5px rgb(255 255 255 / 0.35);
+}
+.btn-github:hover {
+  background: rgb(255 255 255 / 0.16);
+}
+.btn-dark {
+  background: var(--ink);
+  color: var(--canvas);
+}
+.btn-dark:hover {
+  opacity: 0.9;
+}
+.btn-white:hover {
+  background: #dff5f1;
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--ink);
+  box-shadow: inset 0 0 0 1.5px var(--line);
+}
+.btn-ghost:hover {
+  background: var(--sunken);
+}
+.btn-ghost-white {
+  background: transparent;
+  color: #ffffff;
+  box-shadow: inset 0 0 0 1.5px rgb(255 255 255 / 0.6);
+}
+.btn-ghost-white:hover {
+  background: rgb(255 255 255 / 0.12);
+}
+.btn-appstore {
+  background: #000000;
+  color: #ffffff;
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.28);
+  padding-inline: 1.375rem;
+  text-align: left;
+}
+.btn-appstore:hover {
+  background: #1b1f21;
+}
+
+.link {
+  color: var(--mint-text);
+  font-weight: 600;
+  text-decoration: underline;
+}
+.link:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* Long-form text. See <Prose>. */
+.prose {
+  max-width: 42rem;
+}
+.prose > * + * {
+  margin-top: 1.1em;
+}
+.prose h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  margin-top: 2.2em;
+  scroll-margin-top: 5.5rem;
+  text-wrap: balance;
+}
+.prose h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  margin-top: 1.8em;
+  scroll-margin-top: 5.5rem;
+}
+.prose h2 + *,
+.prose h3 + * {
+  margin-top: 0.6em;
+}
+.prose > :first-child {
+  margin-top: 0;
+}
+.prose a {
+  color: var(--mint-text);
+  font-weight: 600;
+  text-decoration: underline;
+}
+.prose ul,
+.prose ol {
+  padding-left: 1.4em;
+}
+.prose ul {
+  list-style: disc;
+}
+.prose ol {
+  list-style: decimal;
+}
+.prose li + li {
+  margin-top: 0.45em;
+}
+.prose li::marker {
+  color: var(--ink-soft);
+}
+.prose strong {
+  font-weight: 700;
+}
+.prose code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  padding: 0.1em 0.35em;
+  border-radius: 6px;
+  background: var(--sunken);
+  overflow-wrap: anywhere;
+}
+.prose pre code {
+  padding: 0;
+  background: none;
+}
+.prose hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin-block: 2.5em;
+}
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95em;
+}
+.prose th,
+.prose td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.6em 0.75em 0.6em 0;
+  border-bottom: 1px solid var(--line);
+}
+.prose th {
+  font-weight: 700;
+}
+
+/* Sidebar layout for long pages. See <TocSidebar>. */
+.toc-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+}
+@media (min-width: 64rem) {
+  .toc-layout {
+    grid-template-columns: minmax(0, 42rem) 15rem;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+  .toc-layout > .toc {
+    order: 2;
+    position: sticky;
+    top: 6rem;
+    align-self: start;
+    max-height: calc(100dvh - 8rem);
+    overflow-y: auto;
+  }
+}
+
+/* Native disclosure marker off. <Faq> and <TocSidebar> draw their own. */
+summary {
+  cursor: pointer;
+  list-style: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+details[open] > summary .chevron {
+  transform: rotate(180deg);
+}
+.chevron {
+  flex: none;
+  transition: transform 150ms ease;
+}
+
+/* Keypad keys, used for the Talk demo and for real sequences of steps. */
+.key {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  border-radius: 999px;
+  background: var(--sunken);
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1;
+}
+
+}
+
+/* Mint links stay AA on the sunken surface in light mode. */
+@media (prefers-color-scheme: light) {
+  .bg-sunken {
+    --mint-text: #096a60;
+  }
+}
+
+/* The one load moment on the site: the hero phone settles into place. */
+@media (prefers-reduced-motion: no-preference) {
+  .phone-rise {
+    animation: phone-rise 700ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  }
+  @keyframes phone-rise {
+    from {
+      transform: translateY(28px);
+    }
+  }
+  .ring-pulse {
+    animation: ring-pulse 1.1s ease-out infinite;
+  }
+  @keyframes ring-pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgb(14 156 138 / 0.55);
+    }
+    100% {
+      box-shadow: 0 0 0 14px rgb(14 156 138 / 0);
+    }
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+.hero-accent {
+  background: linear-gradient(180deg, #b4fbef 0%, #3fd6bf 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hero-icon {
+  box-shadow: 0 18px 50px -12px rgb(62 219 196 / 0.55), 0 0 0 1px rgb(154 247 232 / 0.25);
+}

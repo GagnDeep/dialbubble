@@ -1,0 +1,3 @@
+{ "profile": "personal", "teamId": "CAR7LQ3Y75", "appId": "6836879949", "bundleId": "com.dialbubble.app",
+  "sku": "com.dialbubble.app", "project": "Dialbubble.xcodeproj", "scheme": "Dialbubble", "platform": "IOS",
+  "metadataDir": "AppStore/metadata", "screenshotsDir": "AppStore/screenshots", "primaryLocale": "en-US" }

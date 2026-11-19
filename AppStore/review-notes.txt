@@ -1,0 +1,37 @@
+HOW TO REVIEW (no account or login needed)
+On the first screen tap "Try the Demo". The whole app runs on built-in simulated data, so nothing is sent, nothing is billed, and no Twilio account is needed.
+
+SUGGESTED PATH
+1. Home: balance, quick actions, numbers, activity.
+2. Calls tab: enter any number, choose a mode above the green button, tap the button. The call screen shows each simulated step. Recents is in the same tab.
+3. Messages tab: open a conversation and send a reply. Use the compose button for a new message.
+4. Settings: accounts, numbers, notifications, Face ID lock, export and Help & Guides.
+
+WHAT THE APP IS
+Dialbubble is a free, open-source client for people who have, or want, their own Twilio account (a third-party telecom API). Users paste their own Account SID and Auth Token, or an API key. The app then calls Twilio's public REST API directly from the device over HTTPS. Source code: https://github.com/GagnDeep/dialbubble
+
+EXTERNAL SERVICES AND AUTHORIZATION
+- api.twilio.com and lookups.twilio.com: used under each user's own Twilio account and credentials. This is how Twilio's public API is meant to be used. Dialbubble is independent, not affiliated with Twilio, and says so in the app and listing. "Twilio" is used only to describe compatibility.
+- twimlets.com (a free service run by Twilio): only for two-way calls, to hold the instructions that run after the user presses a key.
+- There is no Dialbubble server, account, analytics, ads or tracking.
+
+PAYMENTS
+Dialbubble is free and has no in-app purchases or digital goods. Twilio bills its own customers directly for telecom usage, a real-world service used outside the app. Dialbubble sells nothing.
+
+HOW REAL CALLS WORK (no VoIP, CallKit or background audio)
+For a two-way call, Twilio rings the user's regular phone. A voice asks them to press any key, and then Twilio dials the other person, showing the user's Twilio number as caller ID. These calls happen in the phone's normal dialer, which is why the demo simulates them. Twilio blocks two-way calls on free trial accounts, so the app explains this and offers Voice Message there instead.
+
+PERMISSIONS (all optional, all asked in context)
+- Face ID: app lock, only if the user turns it on in Settings.
+- Contacts: shows contact names instead of numbers. Contacts are read on the device only and never uploaded. Without access, the system contact picker still works.
+- Notifications: only if the user turns on "Alerts While Closed" or the app icon badge in Settings.
+- Background App Refresh (UIBackgroundModes: fetch): when alerts are on, the app occasionally fetches the user's own recent texts and calls from Twilio and posts a local notification for new ones. There is no push server.
+No location, microphone, camera or tracking.
+
+DATA ON DEVICE
+Recent history is cached in the app's sandbox so the app opens instantly and works offline. Users can clear it or export it as CSV in Settings.
+
+MESSAGING
+Messages go only to recipients the user enters or picks, from the user's own numbers. There are no shared chats, public content or contact between Dialbubble users. Twilio's own compliance rules apply to each account.
+
+All features can be reviewed in the demo. If you would like to test with a real Twilio account, please contact us using the review contact details and we will arrange it.
